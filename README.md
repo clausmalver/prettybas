@@ -1,4 +1,4 @@
-# Edge Extension
+# PrettyBAS - an extension for the Chromium Engine
 
 This JavaScript code snippet provides a fix for a viewing problem in the NetIQ IAM (Identity Access Management) system. When included in the NetIQ IAM system's pages, automatically set a checkmark in 'checkCheckbox()' and change the default size of 'inheritedRoles' to 15 instead of 5.
 
