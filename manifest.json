@@ -1,10 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Pretty BAS",
-  "version": "1.0",
+  "version": "1.1",
+  "description": "Du er lige faldet over den bedste Edge-udvidelse nogensinde – en udvidelse, der helt sikkert ikke behøver at eksistere, fordi BAS allerede er et fejlfrit mesterværk. Men hey, hvorfor ikke gøre perfektion endnu mere perfekt? Så kom nu, installer den. Ikke fordi BAS behøver at blive fikset – åh nej, det er allerede et strålende fyrtårn inden for webdesign – men fordi du inderst inde godt ved, at det kunne være en lille smule bedre.",
   "permissions": [
     "activeTab",
     "storage",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "host_permissions": [
     "https://*.idm.aalborg.dk/*"
   ],
   "content_scripts": [
@@ -21,5 +26,11 @@
       "48": "images/icon48.png",
       "128": "images/icon128.png"
     }
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.js"],
+      "matches": ["https://*.idm.aalborg.dk/*"]
+    }
+  ]
 }
